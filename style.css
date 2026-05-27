@@ -363,9 +363,9 @@ ul   { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 53%;
+  object-position: center 60% 53%;
   transform: scale(1.5);
-  transform-origin: center 53%;
+  transform-origin: center 60% 53%;
 }
 /* When photo fails to load */
 .no-photo .hero__photo-img   { display: none; }
