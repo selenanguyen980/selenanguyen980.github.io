@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selena Nguyen — Data Analyst</title>
+  <meta name="description" content="Data Analyst with expertise in SQL, Python, and Tableau. I turn complex data into clear business decisions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">Selena Nguyen</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="assets/resume.pdf" download class="btn btn--nav">&#8595; Resume</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Open to Data Analytics Roles
+        </div>
+        <h1 class="hero__name">Selena<br />Nguyen</h1>
+        <p class="hero__role">Data Analyst &middot; SQL &middot; Python &middot; Tableau</p>
+        <p class="hero__tagline">From the classroom to the boardroom &mdash; I find the insight in the data, then make sure the right people understand it.</p>
+        <div class="hero__ctas">
+          <a href="#projects" class="btn btn--primary">View My Work &#8595;</a>
+          <a href="assets/resume.pdf" download class="btn btn--outline">Download Resume</a>
+        </div>
+        <div class="hero__social">
+          <a href="https://www.linkedin.com/in/selenanguyenx/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/selenanguyen980" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://medium.com/@selenanguyen980" target="_blank" rel="noopener" aria-label="Medium blog" class="social-link">
+            <i class="fab fa-medium"></i>
+          </a>
+          <a href="mailto:selenanguyen980@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__photo-wrap">
+        <div class="hero__photo-bg"></div>
+        <div class="hero__photo-ring" id="photoRing">
+          <img
+            src="assets/selena.jpg"
+            alt="Selena Nguyen, Data Analyst"
+            class="hero__photo-img"
+            onerror="document.getElementById('photoRing').classList.add('no-photo')"
+          />
+          <div class="hero__photo-initials" aria-hidden="true">SN</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── IMPACT STATS ── -->
+  <section class="stats" aria-label="Impact metrics">
+    <div class="container stats__grid">
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">55%</span>
+        <span class="stat-card__label">Wait Time Reduced</span>
+        <span class="stat-card__context">SQL pre/post analysis &middot; staffing model</span>
+      </div>
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">6</span>
+        <span class="stat-card__label">Projects Shipped</span>
+        <span class="stat-card__context">SQL &middot; Python &middot; Tableau &middot; Excel</span>
+      </div>
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">63,500+</span>
+        <span class="stat-card__label">Rows Processed</span>
+        <span class="stat-card__context">ETL pipeline &middot; Python + SQL</span>
+      </div>
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">20%</span>
+        <span class="stat-card__label">Revenue Increase</span>
+        <span class="stat-card__context">SQL window functions &middot; POS data</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text" data-animate>
+          <span class="section-label">About</span>
+          <h2 class="section-title">A data analyst who speaks human.</h2>
+          <img
+            src="assets/selena-teaching.jpeg"
+            alt="Selena Nguyen welcoming students outside her classroom at Room 217"
+            class="about__banner"
+          />
+          <p>I spent five years as a teacher in Seattle&rsquo;s schools &mdash; tracking student performance, spotting trends, and translating data into action plans families could actually understand. I realized I was already doing the work of an analyst. I just needed to make it official.</p>
+          <p>Since pivoting into data analytics, I&rsquo;ve built ETL pipelines, designed Tableau dashboards for VP-level audiences, and used SQL to cut customer wait times by 55%. What sets me apart? I don&rsquo;t just find the insight &mdash; I make sure the right person understands it and can act on it.</p>
+          <div class="about__tools">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">A/B Testing</span>
+            <span class="tag">EDA</span>
+            <span class="tag">Cohort Analysis</span>
+            <span class="tag">KPI Reporting</span>
+            <span class="tag">Stakeholder Reporting</span>
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">Statistical Analysis</span>
+            <span class="tag">Pre/Post Analysis</span>
+            <span class="tag">Business Intelligence</span>
+          </div>
+        </div>
+        <div class="about__highlight" data-animate>
+          <div class="about__highlight-header">
+            <span class="section-label">What sets her apart</span>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__icon">🧠</div>
+            <h3>Depth Behind the Data</h3>
+            <p>Five years in education, two in customer success &mdash; she brings stakeholder instincts most analysts don&rsquo;t have. She&rsquo;s worked at every level, built trust with 30+ stakeholders, and knows what decision-makers actually need before they ask.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__icon">🗣️</div>
+            <h3>Findings That Land</h3>
+            <p>Five years teaching complex subjects to diverse audiences built a rare skill: making anything click for anyone. She now applies that to SQL findings, Tableau dashboards, and VP-level briefings. The analysis isn&rsquo;t done until the right person acts on it.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__icon">⚙️</div>
+            <h3>Process Improver</h3>
+            <p>Every project ends with a recommendation that gets implemented &mdash; not just a dashboard. She&rsquo;s redesigned staffing models, surfaced churn drivers at 68%, identified $151K pay variances, and delivered actionable next steps across five industries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__facts" data-animate>
+        <div class="about__fact">
+          <span class="about__fact-number">5</span>
+          <span class="about__fact-label">Industries Analyzed</span>
+          <span class="about__fact-sub">healthcare · retail · education · restaurant · tech</span>
+        </div>
+        <div class="about__fact">
+          <span class="about__fact-number">30+</span>
+          <span class="about__fact-label">Stakeholders Engaged</span>
+          <span class="about__fact-sub">ICs to VP-level audiences</span>
+        </div>
+        <div class="about__fact">
+          <span class="about__fact-number">M.Ed.</span>
+          <span class="about__fact-label">Advanced Degree</span>
+          <span class="about__fact-sub">University of Washington, Seattle</span>
+        </div>
+        <div class="about__fact">
+          <span class="about__fact-number">📍</span>
+          <span class="about__fact-label">Seattle, WA</span>
+          <span class="about__fact-sub">open to remote roles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS BENTO ── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">End-to-end work</h2>
+      <div class="projects-bento" data-animate>
+
+        <article class="project-card project-card--large">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">Python</span>
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">Tableau</span>
+              <span class="tag tag--accent">ETL</span>
+            </div>
+            <a href="https://github.com/selenanguyen980/customer-churn-ETL" target="_blank" rel="noopener" class="project-card__github" aria-label="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <img src="assets/preview-ETL.jpeg" alt="Customer churn ETL pipeline Tableau dashboard" class="project-card__preview" style="object-position: center 50%;" />
+          <h3 class="project-card__title">Customer Churn ETL Pipeline</h3>
+          <p class="project-card__desc">Built an end-to-end ETL pipeline using Python, Google Sheets API (gspread), Pandas, and SQLAlchemy to extract, clean, and load 63,500 rows of telecom customer data into MySQL. Used SQL (CTEs, GROUP BY, CASE WHEN) to identify key churn drivers and built a four-page Tableau dashboard with live MySQL connection.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Key Finding</span>
+            <span class="insight-value">Customers on mismatched plans churned at up to 68.58%</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/selenanguyen980/customer-churn-ETL" target="_blank" rel="noopener" class="project-card__link">View Project on GitHub &rarr;</a>
+            <a href="https://medium.com/@selenanguyen980/customer-churn-etl-pipeline-analysis-0b64ae1da509" target="_blank" rel="noopener" class="project-card__link--medium"><i class="fab fa-medium"></i> Read on Medium &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--large">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">Tableau</span>
+              <span class="tag tag--accent">Pre/Post Analysis</span>
+            </div>
+            <a href="https://github.com/selenanguyen980/call_logs_case_study" target="_blank" rel="noopener" class="project-card__github" aria-label="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div style="height:190px;overflow:hidden;border-radius:8px;border:1px solid #f2c4cf;margin-bottom:16px;">
+            <img src="assets/preview-calls.jpeg" alt="Tableau dashboard showing call volume and average call length before and after product updates" style="width:100%;height:380px;object-fit:cover;object-position:center center;display:block;margin-top:-190px;" />
+          </div>
+          <h3 class="project-card__title">Support Call Analysis</h3>
+          <p class="project-card__desc">Conducted pre/post analysis on support call logs to measure the operational impact of two product releases. Identified a 38% rise in billing calls/day and 17% rise in login calls post-update. Analysis directly informed staffing decisions that cut average wait times by 55%.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Business Impact</span>
+            <span class="insight-value">55% reduction in average wait time &mdash; 18 min &rarr; 10 min</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/selenanguyen980/call_logs_case_study" target="_blank" rel="noopener" class="project-card__link">View Project on GitHub &rarr;</a>
+            <a href="https://medium.com/@selenanguyen980/sql-case-study-analyzing-support-calls-before-and-after-product-changes-6bda4028286d" target="_blank" rel="noopener" class="project-card__link--medium"><i class="fab fa-medium"></i> Read on Medium &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--medium">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">Python</span>
+              <span class="tag tag--accent">Pandas</span>
+              <span class="tag tag--accent">Tableau</span>
+            </div>
+            <a href="https://github.com/selenanguyen980/student-mental-health-eda" target="_blank" rel="noopener" class="project-card__github" aria-label="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <img src="assets/preview-mental-health.jpeg" alt="Tableau dashboard showing CGPA distribution by depression status and anxiety rates by year group" class="project-card__preview" style="object-position: center 25%;" />
+          <h3 class="project-card__title">Student Mental Health EDA</h3>
+          <p class="project-card__desc">Exploratory analysis on student mental health survey data (N=101), uncovering correlations between depression, anxiety, and academic performance. Resolved data quality issues using Pandas string methods before building a Tableau dashboard for non-technical stakeholders.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Scope</span>
+            <span class="insight-value">N=101 &middot; CGPA vs. mental health indicators</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/selenanguyen980/student-mental-health-eda" target="_blank" rel="noopener" class="project-card__link">View Project on GitHub &rarr;</a>
+            <a href="https://medium.com/@selenanguyen980/exploring-the-relationship-between-student-mental-health-and-academic-performance-c6bd081e2fb8" target="_blank" rel="noopener" class="project-card__link--medium"><i class="fab fa-medium"></i> Read on Medium &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--medium">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">Excel</span>
+            </div>
+            <a href="https://github.com/selenanguyen980/teriyaki_business_analysis" target="_blank" rel="noopener" class="project-card__github" aria-label="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <img src="assets/preview-restaurant.jpeg" alt="Excel PivotTables and charts showing top menu items by units sold and sales volume by hour" class="project-card__preview" style="object-position: center 0%;" />
+          <h3 class="project-card__title">Restaurant Sales Analysis</h3>
+          <p class="project-card__desc">Partnered with a local restaurant owner to analyze POS data. Used SQL window functions to rank menu items and identify peak/slow periods; recommended a targeted promotion that drove measurable results. Presented via Excel PivotTables and charts.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Business Impact</span>
+            <span class="insight-value">20% revenue increase during slow hours</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/selenanguyen980/teriyaki_business_analysis" target="_blank" rel="noopener" class="project-card__link">View Project on GitHub &rarr;</a>
+            <a href="https://medium.com/@selenanguyen980/analyzing-sales-data-to-support-business-decisions-for-a-local-restaurant-802600fa41e2" target="_blank" rel="noopener" class="project-card__link--medium"><i class="fab fa-medium"></i> Read on Medium &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--medium">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">Window Functions</span>
+              <span class="tag tag--accent">STDDEV</span>
+            </div>
+            <a href="https://github.com/selenanguyen980/compensation_benchmarking_analysis" target="_blank" rel="noopener" class="project-card__github" aria-label="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <img src="assets/preview-compensation.jpeg" alt="SQL query using CTEs and window functions for compensation benchmarking analysis" class="project-card__preview" />
+          <h3 class="project-card__title">Compensation Benchmarking</h3>
+          <p class="project-card__desc">Analyzed employee compensation for a healthcare company using SQL (CTEs, RANK with PARTITION BY, STDDEV). Identified Data Engineers had the highest pay variance across all roles and recommended role tiering to reduce compensation inequity.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Key Finding</span>
+            <span class="insight-value">$151K salary range within a single role</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/selenanguyen980/compensation_benchmarking_analysis" target="_blank" rel="noopener" class="project-card__link">View Project on GitHub &rarr;</a>
+            <a href="https://medium.com/@selenanguyen980/compensation-benchmarking-analysis-64ede44c9bb0" target="_blank" rel="noopener" class="project-card__link--medium"><i class="fab fa-medium"></i> Read on Medium &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--medium">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">LeetCode</span>
+              <span class="tag tag--accent">StrataScratch</span>
+            </div>
+            <a href="https://github.com/selenanguyen980/leet_code" target="_blank" rel="noopener" class="project-card__github" aria-label="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h3 class="project-card__title">Daily SQL Practice</h3>
+          <p class="project-card__desc">Ongoing log of SQL problem-solving from LeetCode and StrataScratch &mdash; documenting mastery of window functions, JOINs, aggregations, and CTEs. A commitment to staying sharp and continuously building depth.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Focus Areas</span>
+            <span class="insight-value">Window functions &middot; CTEs &middot; Joins &middot; Aggregations</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/selenanguyen980/leet_code" target="_blank" rel="noopener" class="project-card__link">View on GitHub &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS BENTO ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <span class="section-label">Skills</span>
+      <h2 class="section-title">Technical toolkit</h2>
+      <div class="skills-bento" data-animate>
+
+        <div class="skill-card skill-card--large skill-card--sql">
+          <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+          <h3 class="skill-card__name">SQL</h3>
+          <p class="skill-card__desc">CTEs, window functions (RANK, PARTITION BY), GROUP BY, JOINs, CASE WHEN, time-series aggregations, subqueries. Primary language across all analytical work.</p>
+          <div class="skill-card__badge">Primary Language</div>
+        </div>
+
+        <div class="skill-card skill-card--large skill-card--python">
+          <div class="skill-card__icon"><i class="fab fa-python"></i></div>
+          <h3 class="skill-card__name">Python</h3>
+          <p class="skill-card__desc">Pandas for EDA &amp; data cleaning, SQLAlchemy for DB connections, gspread for Google Sheets API. End-to-end ETL pipeline development.</p>
+          <div class="skill-card__badge">Data Engineering</div>
+        </div>
+
+        <div class="skill-card skill-card--medium skill-card--tableau">
+          <div class="skill-card__icon">📊</div>
+          <h3 class="skill-card__name">Tableau</h3>
+          <p class="skill-card__desc">Multi-page dashboards, live MySQL connections, stakeholder-ready visualizations for VP-level audiences.</p>
+        </div>
+
+        <div class="skill-card skill-card--medium skill-card--excel">
+          <div class="skill-card__icon">📋</div>
+          <h3 class="skill-card__name">Excel</h3>
+          <p class="skill-card__desc">PivotTables, charts, data cleaning, and business reporting for non-technical stakeholders.</p>
+        </div>
+
+        <div class="skill-card skill-card--small">
+          <div class="skill-card__icon">❄️</div>
+          <h3 class="skill-card__name">Snowflake</h3>
+          <p class="skill-card__desc">Cloud data warehouse for large-scale, high-performance SQL queries.</p>
+        </div>
+
+        <div class="skill-card skill-card--small skill-card--gsheets">
+          <div class="skill-card__icon">📊</div>
+          <h3 class="skill-card__name">Google Sheets</h3>
+          <p class="skill-card__desc">API-connected via gspread for Python-driven data pipelines and collaborative reporting.</p>
+        </div>
+
+        <div class="skills-chips">
+          <span class="chip">A/B Testing</span>
+          <span class="chip">EDA</span>
+          <span class="chip">Cohort Analysis</span>
+          <span class="chip">KPI Reporting</span>
+          <span class="chip">Pre/Post Analysis</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Data Cleaning</span>
+          <span class="chip">Statistical Analysis</span>
+          <span class="chip">Data Visualization</span>
+          <span class="chip">Stakeholder Reporting</span>
+          <span class="chip">BI</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Work history</h2>
+      <div class="experience__list">
+
+        <article class="exp-card exp-card--featured" data-animate>
+          <div class="exp-card__header">
+            <div>
+              <h3 class="exp-card__title">Data Analytics Consultant</h3>
+              <p class="exp-card__company">Independent &middot; Remote</p>
+            </div>
+            <span class="exp-card__date">Dec 2025 &ndash; Present</span>
+          </div>
+          <div class="exp-card__tags">
+            <span class="tag tag--blue">SQL</span>
+            <span class="tag tag--blue">Python</span>
+            <span class="tag tag--blue">Tableau</span>
+            <span class="tag tag--blue">Pandas</span>
+            <span class="tag tag--blue">Excel</span>
+          </div>
+          <ul class="exp-card__bullets">
+            <li>Partnered with small business owners and organizations to perform end-to-end data analysis, delivering actionable SQL and Python-based insights paired with Tableau and Excel dashboards</li>
+            <li><strong>Restaurant POS analysis:</strong> Used SQL window functions (RANK()) to identify peak/slow sales periods and top menu items; recommended a targeted promotion that drove a <strong>20% revenue increase</strong> during slow hours</li>
+            <li><strong>Customer churn ETL pipeline:</strong> Built a full ETL pipeline (Python, Pandas, SQLAlchemy) extracting and cleaning 63,500 rows into MySQL; identified that mismatched-plan customers churned at up to 68.58%, with findings surfaced via a four-page Tableau dashboard</li>
+            <li><strong>Student mental health EDA:</strong> Conducted exploratory analysis on N=101 survey data using Python/Pandas, resolving data quality issues and delivering a Tableau dashboard for non-technical stakeholders</li>
+            <li><strong>Compensation benchmarking:</strong> Identified a $151K salary range variance within a single role using SQL (STDDEV, RANK with PARTITION BY); recommended role tiering to reduce pay inequity</li>
+          </ul>
+        </article>
+
+        <article class="exp-card" data-animate>
+          <div class="exp-card__header">
+            <div>
+              <h3 class="exp-card__title">Data Analyst Externship</h3>
+              <p class="exp-card__company">Healthcare SaaS Company &middot; Remote</p>
+            </div>
+            <span class="exp-card__date">Oct &ndash; Dec 2025</span>
+          </div>
+          <div class="exp-card__tags">
+            <span class="tag tag--blue">SQL</span>
+            <span class="tag tag--blue">Tableau</span>
+            <span class="tag tag--blue">Customer Success Org</span>
+            <span class="tag tag--blue">Healthcare SaaS</span>
+          </div>
+          <ul class="exp-card__bullets">
+            <li>Conducted pre/post analysis on support call logs across two product release windows using SQL (CTEs, GROUP BY, time-series aggregations), measuring baseline call volume against post-release spikes</li>
+            <li><strong>Recommended increasing on-call rep coverage from 7&ndash;9 to 12 agents</strong> ahead of release windows; adopted before the second release and directly drove a <strong>55% reduction in average wait time</strong> (18 min &rarr; 10 min)</li>
+            <li>Identified time-of-day demand patterns and provided shift-level staffing recommendations to align coverage with peak hours, reducing coverage gaps</li>
+            <li>Flagged self-service content gaps by analyzing call topic distribution; recommendations adopted by the team and contributed to a downward trend in contact rate</li>
+            <li>Presented findings to VP-level leadership via Tableau dashboard, slide deck, and written reports &mdash; tailored for both technical and non-technical audiences</li>
+          </ul>
+        </article>
+
+        <article class="exp-card" data-animate>
+          <div class="exp-card__header">
+            <div>
+              <h3 class="exp-card__title">Customer Success Specialist</h3>
+              <p class="exp-card__company">SimplePractice &middot; Remote</p>
+            </div>
+            <span class="exp-card__date">Nov 2024 &ndash; Dec 2025</span>
+          </div>
+          <div class="exp-card__tags">
+            <span class="tag tag--blue">Zendesk</span>
+            <span class="tag tag--blue">Data Analysis</span>
+            <span class="tag tag--blue">CSAT Reporting</span>
+          </div>
+          <ul class="exp-card__bullets">
+            <li>Maintained a <strong>95% customer satisfaction (CSAT) score</strong> while identifying recurring patterns in support tickets to inform process improvements</li>
+            <li>Tracked and categorized support issues using Zendesk; analyzed ticket data to identify trends that proactively reduced repeat contact rates</li>
+          </ul>
+        </article>
+
+        <article class="exp-card" data-animate>
+          <div class="exp-card__header">
+            <div>
+              <h3 class="exp-card__title">Teacher</h3>
+              <p class="exp-card__company">Greater Seattle School Districts &middot; Washington</p>
+            </div>
+            <span class="exp-card__date">Nov 2019 &ndash; Aug 2024</span>
+          </div>
+          <div class="exp-card__tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Stakeholder Communication</span>
+          </div>
+          <ul class="exp-card__bullets">
+            <li>Tracked student performance and engagement trends across cohorts using Excel and Google Sheets, identifying at-risk students early and adjusting strategies based on data findings</li>
+            <li>Built and maintained relationships with 30+ stakeholders including administrators, colleagues, and parents using structured feedback and regular updates</li>
+            <li>Facilitated training for 20+ staff on a new communication platform (ParentSquare), achieving high adoption across teams</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section class="education section" id="education">
+    <div class="container">
+      <span class="section-label">Education</span>
+      <h2 class="section-title">Academic background</h2>
+      <div class="education__grid">
+        <div class="edu-card" data-animate>
+          <div class="edu-card__degree">Master of Education</div>
+          <div class="edu-card__school">University of Washington, Seattle</div>
+        </div>
+        <div class="edu-card" data-animate>
+          <div class="edu-card__degree">Bachelor of Arts in Education</div>
+          <div class="edu-card__school">University of Washington, Seattle</div>
+        </div>
+      </div>
+      <h3 class="education__cert-title">Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-badge"><i class="fab fa-google"></i> Google Project Management</div>
+        <div class="cert-badge"><i class="fas fa-headset"></i> Zendesk Support Suite</div>
+        <div class="cert-badge"><i class="fas fa-cloud"></i> Salesforce</div>
+        <div class="cert-badge"><i class="fas fa-graduation-cap"></i> WA State Education</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner" data-animate>
+      <span class="section-label">Contact</span>
+      <h2 class="contact__title">Let&rsquo;s work together.</h2>
+      <p class="contact__sub">Open to data analytics roles in Seattle, WA or remote. Let&rsquo;s talk.</p>
+      <div class="contact__ctas">
+        <a href="https://medium.com/@selenanguyen980" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+          <i class="fab fa-medium"></i>&nbsp; Medium
+        </a>
+        <a href="https://www.linkedin.com/in/selenanguyenx/" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+          <i class="fab fa-linkedin-in"></i>&nbsp; LinkedIn
+        </a>
+        <a href="assets/resume.pdf" download class="btn btn--outline btn--lg">
+          <i class="fas fa-file-alt"></i>&nbsp; Download Resume
+        </a>
+      </div>
+      <a href="mailto:selenanguyen980@gmail.com" class="contact__medium">
+        selenanguyen980@gmail.com
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__name">Selena Nguyen</span>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/selenanguyenx/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/selenanguyen980" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://medium.com/@selenanguyen980" target="_blank" rel="noopener" aria-label="Medium"><i class="fab fa-medium"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Nav scroll shadow
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('nav__links--open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    // Close mobile nav when a link is clicked
+    links.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        links.classList.remove('nav__links--open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Scroll-reveal
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('[data-animate]').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
