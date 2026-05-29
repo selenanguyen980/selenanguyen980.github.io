@@ -13,11 +13,10 @@
   <link rel="stylesheet" href="style.css" />
 
   <!-- Open Graph / Social Preview -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://selenanguyen980.github.io/" />
-<meta property="og:title" content="Selena Nguyen | Data Analyst" />
-<meta property="og:description" content="Educator turned Data Analyst with expertise in SQL, Python, and Tableau." />
-<meta property="og:image" content="https://selenanguyen980.github.io/assets/og-preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://selenanguyen980.github.io/" />
+  <meta property="og:title" content="Selena Nguyen | Data Analyst" />
+  <meta property="og:description" content="Educator turned Data Analyst with expertise in SQL, Python, and Tableau." />
   <meta property="og:image" content="https://selenanguyen980.github.io/assets/og-preview.png" />
 </head>
 <body>
@@ -30,9 +29,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#video" class="nav__link">Presentation</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#projects" class="nav__link">Projects</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
         <li><a href="#experience" class="nav__link">Experience</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
@@ -108,6 +108,31 @@
         <span class="stat-card__number">20%</span>
         <span class="stat-card__label">Revenue Increase</span>
         <span class="stat-card__context">SQL window functions &middot; POS data</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO ── -->
+  <section class="video-section section" id="video">
+    <div class="container">
+      <span class="section-label">Featured</span>
+      <h2 class="section-title">Watch me present my work</h2>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/jgBoVdujAk4"
+          title="Selena Nguyen Project Presentation"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <ul class="video-bullets">
+        <li><strong>Full data lifecycle:</strong> Built an ETL pipeline using Python, SQL, and Tableau to process 63,500 rows of customer data from raw input to live dashboard.</li>
+        <li><strong>69% churn rate on mismatched plans:</strong> Customers paying for features they weren't using churned at nearly 3x the baseline rate.</li>
+        <li><strong>Retention strategy:</strong> Recommended proactive plan reviews within the first 6 months, directly linking the analysis to a business action.</li>
+      </ul>
+      <div class="video-cta">
+        <a href="#projects" class="btn btn--primary">View My Projects &#8595;</a>
       </div>
     </div>
   </section>
@@ -192,23 +217,69 @@
     </div>
   </section>
 
-<!-- ── VIDEO ── -->
-<section class="video-section section" id="video">
-  <div class="container">
-    <span class="section-label">Featured</span>
-    <h2 class="section-title">Watch me present my work</h2>
-    <div class="video-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/jgBoVdujAk4"
-        title="Selena Nguyen Project Presentation"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+  <!-- ── SKILLS BENTO ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <span class="section-label">Skills</span>
+      <h2 class="section-title">Technical toolkit</h2>
+      <div class="skills-bento" data-animate>
+
+        <div class="skill-card skill-card--large skill-card--sql">
+          <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+          <h3 class="skill-card__name">SQL</h3>
+          <p class="skill-card__desc">CTEs, window functions (RANK, PARTITION BY), GROUP BY, JOINs, CASE WHEN, time-series aggregations, subqueries. Primary language across all analytical work.</p>
+          <div class="skill-card__badge">Primary Language</div>
+        </div>
+
+        <div class="skill-card skill-card--large skill-card--python">
+          <div class="skill-card__icon"><i class="fab fa-python"></i></div>
+          <h3 class="skill-card__name">Python</h3>
+          <p class="skill-card__desc">Pandas for EDA &amp; data cleaning, SQLAlchemy for DB connections, gspread for Google Sheets API. End-to-end ETL pipeline development.</p>
+          <div class="skill-card__badge">Data Engineering</div>
+        </div>
+
+        <div class="skill-card skill-card--medium skill-card--tableau">
+          <div class="skill-card__icon">📊</div>
+          <h3 class="skill-card__name">Tableau</h3>
+          <p class="skill-card__desc">Multi-page dashboards, live MySQL connections, stakeholder-ready visualizations for VP-level audiences.</p>
+        </div>
+
+        <div class="skill-card skill-card--medium skill-card--excel">
+          <div class="skill-card__icon">📋</div>
+          <h3 class="skill-card__name">Excel</h3>
+          <p class="skill-card__desc">PivotTables, charts, data cleaning, and business reporting for non-technical stakeholders.</p>
+        </div>
+
+        <div class="skill-card skill-card--small">
+          <div class="skill-card__icon">❄️</div>
+          <h3 class="skill-card__name">Snowflake</h3>
+          <p class="skill-card__desc">Cloud data warehouse for large-scale, high-performance SQL queries.</p>
+        </div>
+
+        <div class="skill-card skill-card--small skill-card--gsheets">
+          <div class="skill-card__icon">📊</div>
+          <h3 class="skill-card__name">Google Sheets</h3>
+          <p class="skill-card__desc">API-connected via gspread for Python-driven data pipelines and collaborative reporting.</p>
+        </div>
+
+        <div class="skills-chips">
+          <span class="chip">A/B Testing</span>
+          <span class="chip">EDA</span>
+          <span class="chip">Cohort Analysis</span>
+          <span class="chip">KPI Reporting</span>
+          <span class="chip">Pre/Post Analysis</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Data Cleaning</span>
+          <span class="chip">Statistical Analysis</span>
+          <span class="chip">Data Visualization</span>
+          <span class="chip">Stakeholder Reporting</span>
+          <span class="chip">BI</span>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
-  
+  </section>
+
   <!-- ── PROJECTS BENTO ── -->
   <section class="projects section" id="projects">
     <div class="container">
@@ -359,69 +430,6 @@
             <a href="https://github.com/selenanguyen980/leet_code" target="_blank" rel="noopener" class="project-card__link">View on GitHub &rarr;</a>
           </div>
         </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SKILLS BENTO ── -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <span class="section-label">Skills</span>
-      <h2 class="section-title">Technical toolkit</h2>
-      <div class="skills-bento" data-animate>
-
-        <div class="skill-card skill-card--large skill-card--sql">
-          <div class="skill-card__icon"><i class="fas fa-database"></i></div>
-          <h3 class="skill-card__name">SQL</h3>
-          <p class="skill-card__desc">CTEs, window functions (RANK, PARTITION BY), GROUP BY, JOINs, CASE WHEN, time-series aggregations, subqueries. Primary language across all analytical work.</p>
-          <div class="skill-card__badge">Primary Language</div>
-        </div>
-
-        <div class="skill-card skill-card--large skill-card--python">
-          <div class="skill-card__icon"><i class="fab fa-python"></i></div>
-          <h3 class="skill-card__name">Python</h3>
-          <p class="skill-card__desc">Pandas for EDA &amp; data cleaning, SQLAlchemy for DB connections, gspread for Google Sheets API. End-to-end ETL pipeline development.</p>
-          <div class="skill-card__badge">Data Engineering</div>
-        </div>
-
-        <div class="skill-card skill-card--medium skill-card--tableau">
-          <div class="skill-card__icon">📊</div>
-          <h3 class="skill-card__name">Tableau</h3>
-          <p class="skill-card__desc">Multi-page dashboards, live MySQL connections, stakeholder-ready visualizations for VP-level audiences.</p>
-        </div>
-
-        <div class="skill-card skill-card--medium skill-card--excel">
-          <div class="skill-card__icon">📋</div>
-          <h3 class="skill-card__name">Excel</h3>
-          <p class="skill-card__desc">PivotTables, charts, data cleaning, and business reporting for non-technical stakeholders.</p>
-        </div>
-
-        <div class="skill-card skill-card--small">
-          <div class="skill-card__icon">❄️</div>
-          <h3 class="skill-card__name">Snowflake</h3>
-          <p class="skill-card__desc">Cloud data warehouse for large-scale, high-performance SQL queries.</p>
-        </div>
-
-        <div class="skill-card skill-card--small skill-card--gsheets">
-          <div class="skill-card__icon">📊</div>
-          <h3 class="skill-card__name">Google Sheets</h3>
-          <p class="skill-card__desc">API-connected via gspread for Python-driven data pipelines and collaborative reporting.</p>
-        </div>
-
-        <div class="skills-chips">
-          <span class="chip">A/B Testing</span>
-          <span class="chip">EDA</span>
-          <span class="chip">Cohort Analysis</span>
-          <span class="chip">KPI Reporting</span>
-          <span class="chip">Pre/Post Analysis</span>
-          <span class="chip">MySQL</span>
-          <span class="chip">Data Cleaning</span>
-          <span class="chip">Statistical Analysis</span>
-          <span class="chip">Data Visualization</span>
-          <span class="chip">Stakeholder Reporting</span>
-          <span class="chip">BI</span>
-        </div>
 
       </div>
     </div>
