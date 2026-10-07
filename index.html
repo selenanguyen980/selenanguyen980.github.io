@@ -123,7 +123,7 @@
     <div class="container">
       <span class="section-label">BI Work</span>
       <h2 class="section-title">BI work with measurable impact</h2>
-      <p class="bi__lede">As a Junior BI Analyst at Transfr, I turn CRM, product, and survey data into trusted models and dashboards for Revenue Operations, Marketing, account teams, Onboarding, and Professional Learning. Customer, colleague, and deal-level details are intentionally left out, so the results below are impact ratios rather than raw figures.</p>
+      <p class="bi__lede">As a Junior BI Analyst at Transfr, I turn CRM, product, and survey data into trusted models and dashboards for Revenue Operations, Marketing, account teams, Onboarding, and Professional Learning. Customer, colleague, and deal-level details are intentionally left out, so the results below are impact ratios and time savings rather than raw figures.</p>
 
       <div class="bi-grid" data-animate>
 
@@ -179,8 +179,8 @@
             <h3 class="project-card__title">Account Team Pipeline Dashboard</h3>
             <p class="project-card__desc">Built an interactive Looker dashboard that gives account teams a live view of open deals by revenue type (new business, upsell, renewal), open versus total deals, and open-deal amounts by state, with filters for account, state, user, and role. Co-built with another junior BI analyst from a stakeholder request, backed by an account-team view I helped push to production.</p>
             <div class="project-card__insight">
-              <span class="insight-label">Built For</span>
-              <span class="insight-value">Account teams tracking open pipeline by revenue type, state, and owner</span>
+              <span class="insight-label">Business Impact</span>
+              <span class="insight-value">Replaced a manual report that revenue leadership used for decisions &middot; Saves 10 hours of manual reporting per month &middot; Adopted, and the manual process was retired</span>
             </div>
           </div>
           <div class="bi-card__visual">
@@ -236,8 +236,8 @@
           <h3 class="project-card__title">Professional Learning Survey Reporting</h3>
           <p class="project-card__desc">Extended the survey data model with conditional logic that maps record types to six survey formats (Day 1, Event, and Launch Event, each with a K-12 variant) and converts nine text-based confidence ratings into numeric measures. Built a confidence heatmap in Looker, then designed two Looker Studio templates and a step-by-step guide for the Professional Learning team.</p>
           <div class="project-card__insight">
-            <span class="insight-label">Outcome</span>
-            <span class="insight-value">Less time and effort spent assembling survey reports</span>
+            <span class="insight-label">Business Impact</span>
+            <span class="insight-value">Saves 8 hours of manual work per month &middot; The team now builds its own dynamic, self-serve reports</span>
           </div>
         </article>
 
@@ -293,6 +293,40 @@
           </div>
         </article>
 
+        <!-- Renewal ownership analysis -->
+        <article class="project-card project-card--medium">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">BigQuery</span>
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">Window Functions</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Renewal Ownership Analysis</h3>
+          <p class="project-card__desc">Built a weekly snapshot of open renewal accounts that tracks account tier and owner changes week over week, using point-in-time joins on versioned account and opportunity history. Then measured the gap between an account-owner change and the renewal date, grouped into 10-day buckets, and compared Closed Won with Closed Lost renewals along with the revenue at stake.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Question Explored</span>
+            <span class="insight-value">Does a late account handoff change whether a renewal closes?</span>
+          </div>
+        </article>
+
+        <!-- dbt views (in progress) -->
+        <article class="project-card project-card--medium">
+          <div class="project-card__top">
+            <div class="project-card__tags">
+              <span class="tag tag--accent">dbt</span>
+              <span class="tag tag--accent">BigQuery</span>
+              <span class="tag tag--accent">SQL</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">dbt Views for BigQuery</h3>
+          <p class="project-card__desc">Common joins and queries were often not deployed as ready-to-query views, so the same logic got rewritten report after report. I started building dbt models that deploy them as reusable BigQuery views, taking on analytics engineering work beyond the BI analyst role.</p>
+          <div class="project-card__insight">
+            <span class="insight-label">Status</span>
+            <span class="insight-value">In progress &middot; moving from BI analyst toward analytics engineering</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -318,12 +352,15 @@
             <span class="tag tag--blue">Looker</span>
             <span class="tag tag--blue">LookML</span>
             <span class="tag tag--blue">Looker Studio</span>
+            <span class="tag tag--blue">dbt</span>
             <span class="tag tag--blue">Salesforce data</span>
           </div>
           <ul class="exp-card__bullets">
             <li><strong>Attribution rebuild:</strong> Co-led a redesign of the last-touch attribution model with another junior BI analyst, resolving every previously unattributable deal and taking unattributed weighted pipeline from <strong>34% to 0%</strong>; credited deals rose more than 20% for both Sales and SDR. Presented the before-and-after findings to Revenue Operations leadership</li>
-            <li><strong>Dashboards across teams:</strong> Built a Looker pipeline dashboard for account teams (open deals by revenue type, state, user, and role) and a partner product-usage dashboard; rebuilt the Marketing lead follow-up dashboard (11 filters) and drafted an onboarding completion view by quarter</li>
-            <li><strong>Self-serve survey reporting:</strong> Extended the Professional Learning survey model in BigQuery and LookML with conditional logic and numeric measures for nine confidence ratings, then built a heatmap, two Looker Studio templates, and a how-to guide to cut the time the team spends assembling reports</li>
+            <li><strong>Live pipeline dashboard:</strong> Replaced a manual report that revenue leadership used for decisions with a live, dynamic Looker dashboard for account teams (open deals by revenue type, state, user, and role), saving <strong>10 hours of manual reporting per month</strong>; it was adopted and the manual process was retired. Also built a partner product-usage dashboard, rebuilt the Marketing lead follow-up dashboard (11 filters), and drafted an onboarding completion view by quarter</li>
+            <li><strong>Self-serve survey reporting:</strong> Extended the Professional Learning survey model in BigQuery and LookML with conditional logic and numeric measures for nine confidence ratings, then built a heatmap, two Looker Studio templates, and a how-to guide, so the team now builds its own dynamic reports and saves <strong>8 hours of manual work per month</strong></li>
+            <li><strong>Renewal analytics:</strong> Built a weekly snapshot of open renewal accounts that tracks tier and owner changes, and analyzed how many days before renewal an owner change happened, comparing Closed Won with Closed Lost renewals</li>
+            <li><strong>Analytics engineering (in progress):</strong> Started building dbt models that deploy common joins and queries as ready-to-query BigQuery views, so logic is reused instead of rewritten for each report</li>
             <li><strong>Data foundations:</strong> Pushed a new account-team view to production, updated weekly-snapshot query logic, root-caused recurring Looker Studio quarter errors to null project start dates, and updated a utilization review report to read from a new product-utilization model</li>
             <li><strong>Team enablement:</strong> Authored a BI resource sheet (go-to-market glossary, license types, key contacts) that speeds up cross-team alignment, and delivered 14 documented BI deliverables in the first 10 weeks</li>
           </ul>
@@ -509,6 +546,7 @@
           <span class="chip">BI</span>
           <span class="chip">LookML</span>
           <span class="chip">Attribution Modeling</span>
+          <span class="chip">dbt</span>
           <span class="chip">Dashboard Design</span>
         </div>
 
