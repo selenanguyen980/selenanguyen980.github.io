@@ -95,26 +95,25 @@
   <section class="stats" aria-label="Impact metrics">
     <div class="container stats__grid">
       <div class="stat-card" data-animate>
-        <span class="stat-card__number">100%</span>
-        <span class="stat-card__label">Unattributable Deals Resolved</span>
-        <span class="stat-card__context">Pipeline unattributed: 34% &rarr; 0%</span>
-      </div>
-      <div class="stat-card" data-animate>
-        <span class="stat-card__number">20%+</span>
-        <span class="stat-card__label">More Deals Credited</span>
-        <span class="stat-card__context">Sales &amp; SDR &middot; after attribution fix</span>
-      </div>
-      <div class="stat-card" data-animate>
-        <span class="stat-card__number">14</span>
-        <span class="stat-card__label">BI Deliverables Shipped</span>
-        <span class="stat-card__context">First 10 weeks &middot; dashboards, models, reports</span>
-      </div>
-      <div class="stat-card" data-animate>
         <span class="stat-card__number">55%</span>
         <span class="stat-card__label">Wait Time Reduced</span>
         <span class="stat-card__context">SQL pre/post analysis &middot; staffing model</span>
       </div>
-
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">63,500</span>
+        <span class="stat-card__label">Rows Through an ETL Pipeline</span>
+        <span class="stat-card__context">Python &middot; MySQL &middot; live Tableau dashboard</span>
+      </div>
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">20%</span>
+        <span class="stat-card__label">Revenue Lift in Slow Hours</span>
+        <span class="stat-card__context">Restaurant POS analysis &middot; SQL</span>
+      </div>
+      <div class="stat-card" data-animate>
+        <span class="stat-card__number">5</span>
+        <span class="stat-card__label">Industries Analyzed</span>
+        <span class="stat-card__context">healthcare &middot; retail &middot; education &middot; restaurant &middot; tech</span>
+      </div>
     </div>
   </section>
 
@@ -122,8 +121,8 @@
   <section class="bi section" id="bi">
     <div class="container">
       <span class="section-label">BI Work</span>
-      <h2 class="section-title">BI work with measurable impact</h2>
-      <p class="bi__lede">As a Junior BI Analyst at Transfr, I turn CRM, product, and survey data into trusted models and dashboards for Revenue Operations, Marketing, account teams, Onboarding, and Professional Learning. Customer, colleague, and deal-level details are intentionally left out, so the results below are impact ratios and time savings rather than raw figures.</p>
+      <h2 class="section-title">Dashboards, models, and reporting</h2>
+      <p class="bi__lede">As a Junior BI Analyst at Transfr, I turned CRM, product, and survey data into trusted models and dashboards for Revenue Operations, Marketing, account teams, Onboarding, and Professional Learning. Customer, colleague, and deal-level details are intentionally left out, so this section describes the scope of the work rather than metrics.</p>
 
       <div class="bi-grid" data-animate>
 
@@ -139,28 +138,26 @@
               </div>
             </div>
             <h3 class="project-card__title">Attribution Model Revamp</h3>
-            <p class="project-card__desc">Co-led, with another junior BI analyst, a rebuild of the last-touch attribution logic that credits pipeline to Marketing, SDR, and Sales. Opportunities missing a qualifying meeting or recent activity used to fall out of the model as &ldquo;unattributable.&rdquo; We added fallback rules that credit the person who created the record, so every deal now has an owner. I presented the before-and-after impact to Revenue Operations leadership.</p>
+            <p class="project-card__desc">Co-led, with another junior BI analyst, a rebuild of the last-touch attribution logic that credits pipeline to Marketing, SDR, and Sales. Opportunities missing a qualifying meeting or recent activity used to fall out of the model as &ldquo;unattributable.&rdquo; We added fallback rules that credit the person who created the record, so every deal had an owner. I presented the before-and-after impact to Revenue Operations leadership.</p>
             <div class="project-card__insight">
-              <span class="insight-label">Business Impact</span>
-              <span class="insight-value">Unattributed weighted pipeline: 34% &rarr; 0% &middot; Credited deals up 20%+ for both Sales and SDR</span>
+              <span class="insight-label">Outcome</span>
+              <span class="insight-value">Every deal has a credited owner, giving Revenue Operations a more complete view of pipeline credit</span>
             </div>
           </div>
           <div class="bi-card__visual">
-            <div class="ba" role="img" aria-label="Bar comparison: share of weighted pipeline with no credited owner fell from 34 percent before the change to 0 percent after">
-              <span class="ba__title">Pipeline with no credited owner</span>
-              <div class="ba__row">
+            <div class="ba" role="img" aria-label="Before, some deals fell out of the model with no credited owner. After, every deal has a credited owner.">
+              <span class="ba__title">Credit coverage</span>
+              <div class="ba__qual">
                 <span class="ba__label">Before</span>
-                <span class="ba__track"><span class="ba__bar ba__bar--before"></span></span>
-                <span class="ba__value">34%</span>
+                <span class="ba__text">Some deals fell out of the model with no credited owner</span>
               </div>
-              <div class="ba__row">
+              <div class="ba__qual ba__qual--after">
                 <span class="ba__label">After</span>
-                <span class="ba__track"><span class="ba__bar ba__bar--after"></span></span>
-                <span class="ba__value ba__value--after">0%</span>
+                <span class="ba__text">Every deal has a credited owner</span>
               </div>
               <div class="ba__rules">
-                <span class="ba__rule"><strong>Meeting + recent activity</strong> &rarr; standard last-touch credit</span>
-                <span class="ba__rule"><strong>Missing meeting or activity</strong> &rarr; credit the record&rsquo;s creator</span>
+                <span class="ba__rule"><strong>Standard last-touch credit</strong> where activity exists</span>
+                <span class="ba__rule"><strong>Fallback ownership rules</strong> where it does not</span>
               </div>
             </div>
           </div>
@@ -179,16 +176,16 @@
             <h3 class="project-card__title">Account Team Pipeline Dashboard</h3>
             <p class="project-card__desc">Built an interactive Looker dashboard that gives account teams a live view of open deals by revenue type (new business, upsell, renewal), open versus total deals, and open-deal amounts by state, with filters for account, state, user, and role. Co-built with another junior BI analyst from a stakeholder request, backed by an account-team view I helped push to production.</p>
             <div class="project-card__insight">
-              <span class="insight-label">Business Impact</span>
-              <span class="insight-value">Replaced a manual report that revenue leadership used for decisions &middot; Saves 10 hours of manual reporting per month &middot; Adopted, and the manual process was retired</span>
+              <span class="insight-label">Outcome</span>
+              <span class="insight-value">Replaced a manual report that revenue leadership used for decisions &middot; Adopted, and the manual process was retired</span>
             </div>
           </div>
           <div class="bi-card__visual">
-            <div class="bi-mock" role="img" aria-label="Illustrative layout of the account team pipeline dashboard, drawn with synthetic data">
+            <div class="bi-mock" role="img" aria-label="Illustrative layout of the account team pipeline dashboard, drawn with placeholder data">
               <div class="bi-mock__filters"><span>Account</span><span>State</span><span>User</span><span>Role</span></div>
               <div class="bi-mock__kpis">
-                <div class="bi-mock__kpi"><small>NB &amp; Upsell open deals</small><strong>128</strong></div>
-                <div class="bi-mock__kpi"><small>Renewal open deals</small><strong>94</strong></div>
+                <div class="bi-mock__kpi"><small>NB &amp; Upsell open deals</small><strong>###</strong></div>
+                <div class="bi-mock__kpi"><small>Renewal open deals</small><strong>###</strong></div>
               </div>
               <div class="bi-mock__charts">
                 <div class="bi-mock__chart">
@@ -215,11 +212,11 @@
               </div>
               <div class="bi-mock__table">
                 <div class="bi-mock__row bi-mock__row--head"><span>User</span><span>Account</span><span>State</span><span>Open</span></div>
-                <div class="bi-mock__row"><span>Rep A</span><span>Account 1</span><span>ST</span><span>3</span></div>
-                <div class="bi-mock__row"><span>Rep B</span><span>Account 2</span><span>ST</span><span>2</span></div>
-                <div class="bi-mock__row"><span>Rep C</span><span>Account 3</span><span>ST</span><span>1</span></div>
+                <div class="bi-mock__row"><span>Rep A</span><span>Account 1</span><span>ST</span><span>#</span></div>
+                <div class="bi-mock__row"><span>Rep B</span><span>Account 2</span><span>ST</span><span>#</span></div>
+                <div class="bi-mock__row"><span>Rep C</span><span>Account 3</span><span>ST</span><span>#</span></div>
               </div>
-              <p class="bi-mock__note">Illustrative layout &middot; synthetic data</p>
+              <p class="bi-mock__note">Illustrative layout &middot; placeholder data</p>
             </div>
           </div>
         </article>
@@ -234,10 +231,10 @@
             </div>
           </div>
           <h3 class="project-card__title">Professional Learning Survey Reporting</h3>
-          <p class="project-card__desc">Extended the survey data model with conditional logic that maps record types to six survey formats (Day 1, Event, and Launch Event, each with a K-12 variant) and converts nine text-based confidence ratings into numeric measures. Built a confidence heatmap in Looker, then designed two Looker Studio templates and a step-by-step guide for the Professional Learning team.</p>
+          <p class="project-card__desc">Extended the survey data model with conditional logic that maps record types to the different survey formats and converts text-based confidence ratings into numeric measures. Built a confidence heatmap in Looker, then designed two Looker Studio templates and a step-by-step guide for the Professional Learning team.</p>
           <div class="project-card__insight">
-            <span class="insight-label">Business Impact</span>
-            <span class="insight-value">Saves 8 hours of manual work per month &middot; The team now builds its own dynamic, self-serve reports</span>
+            <span class="insight-label">Outcome</span>
+            <span class="insight-value">Less manual report assembly &middot; The team could build its own dynamic, self-serve reports</span>
           </div>
         </article>
 
@@ -251,10 +248,10 @@
             </div>
           </div>
           <h3 class="project-card__title">Product Usage &amp; Utilization Reporting</h3>
-          <p class="project-card__desc">Built a Looker dashboard tracking VR and mobile training usage for a partner organization, with training simulations started by month and by module and utilization by organization over the trailing 12 months. Then updated a multi-page, print-friendly utilization review report to pull from a new product-utilization model.</p>
+          <p class="project-card__desc">Built a Looker dashboard tracking VR and mobile training usage for a partner organization, with training simulations started by month and by module and utilization by organization over a rolling period. Then updated a multi-page, print-friendly utilization review report to pull from a new product-utilization model.</p>
           <div class="project-card__insight">
             <span class="insight-label">Built For</span>
-            <span class="insight-value">Partner reviews of product usage across a 12-month window</span>
+            <span class="insight-value">Partner reviews of product usage over time</span>
           </div>
         </article>
 
@@ -268,7 +265,7 @@
             </div>
           </div>
           <h3 class="project-card__title">Marketing Lead Follow-Up Dashboard</h3>
-          <p class="project-card__desc">Rebuilt the Marketing team&rsquo;s lead follow-up dashboard as a replica to master advanced Looker features: 30-day marketing-qualified lead tiles, a drill-down lead list, and 11 filters covering channel, rating, owner, campaign, and days without activity, so stale leads are easy to spot.</p>
+          <p class="project-card__desc">Rebuilt the Marketing team&rsquo;s lead follow-up dashboard as a replica to master advanced Looker features: marketing-qualified lead tiles, a drill-down lead list, and a full set of filters covering channel, rating, owner, campaign, and days without activity, so stale leads are easy to spot.</p>
           <div class="project-card__insight">
             <span class="insight-label">Skills Built</span>
             <span class="insight-value">Advanced filters &middot; interactive charts &middot; drill-downs</span>
@@ -303,14 +300,14 @@
             </div>
           </div>
           <h3 class="project-card__title">Renewal Ownership Analysis</h3>
-          <p class="project-card__desc">Built a weekly snapshot of open renewal accounts that tracks account tier and owner changes week over week, using point-in-time joins on versioned account and opportunity history. Then measured the gap between an account-owner change and the renewal date, grouped into 10-day buckets, and compared Closed Won with Closed Lost renewals along with the revenue at stake.</p>
+          <p class="project-card__desc">Built a weekly snapshot of open renewal accounts that tracks account tier and owner changes week over week, using point-in-time joins on versioned account and opportunity history. Then measured the gap between an account-owner change and the renewal date, grouped into time buckets, and compared Closed Won with Closed Lost renewals along with the revenue at stake.</p>
           <div class="project-card__insight">
             <span class="insight-label">Question Explored</span>
             <span class="insight-value">Does a late account handoff change whether a renewal closes?</span>
           </div>
         </article>
 
-        <!-- dbt views (in progress) -->
+        <!-- dbt views (started) -->
         <article class="project-card project-card--medium">
           <div class="project-card__top">
             <div class="project-card__tags">
@@ -323,7 +320,7 @@
           <p class="project-card__desc">Common joins and queries were often not deployed as ready-to-query views, so the same logic got rewritten report after report. I started building dbt models that deploy them as reusable BigQuery views, taking on analytics engineering work beyond the BI analyst role.</p>
           <div class="project-card__insight">
             <span class="insight-label">Status</span>
-            <span class="insight-value">In progress &middot; moving from BI analyst toward analytics engineering</span>
+            <span class="insight-value">Started &middot; early-stage move from BI analyst toward analytics engineering</span>
           </div>
         </article>
 
@@ -344,7 +341,7 @@
               <h3 class="exp-card__title">Junior BI Analyst</h3>
               <p class="exp-card__company">Transfr &middot; Business Intelligence</p>
             </div>
-            <span class="exp-card__date">Jul 2026 - Present</span>
+            <span class="exp-card__date">Jul 2026 - Oct 2026</span>
           </div>
           <div class="exp-card__tags">
             <span class="tag tag--blue">SQL</span>
@@ -356,13 +353,13 @@
             <span class="tag tag--blue">Salesforce data</span>
           </div>
           <ul class="exp-card__bullets">
-            <li><strong>Attribution rebuild:</strong> Co-led a redesign of the last-touch attribution model with another junior BI analyst, resolving every previously unattributable deal and taking unattributed weighted pipeline from <strong>34% to 0%</strong>; credited deals rose more than 20% for both Sales and SDR. Presented the before-and-after findings to Revenue Operations leadership</li>
-            <li><strong>Live pipeline dashboard:</strong> Replaced a manual report that revenue leadership used for decisions with a live, dynamic Looker dashboard for account teams (open deals by revenue type, state, user, and role), saving <strong>10 hours of manual reporting per month</strong>; it was adopted and the manual process was retired. Also built a partner product-usage dashboard, rebuilt the Marketing lead follow-up dashboard (11 filters), and drafted an onboarding completion view by quarter</li>
-            <li><strong>Self-serve survey reporting:</strong> Extended the Professional Learning survey model in BigQuery and LookML with conditional logic and numeric measures for nine confidence ratings, then built a heatmap, two Looker Studio templates, and a how-to guide, so the team now builds its own dynamic reports and saves <strong>8 hours of manual work per month</strong></li>
+            <li><strong>Attribution rebuild:</strong> Co-led a redesign of the last-touch attribution model with another junior BI analyst, resolving previously unattributable deals so every deal had a credited owner. Presented the before-and-after findings to Revenue Operations leadership</li>
+            <li><strong>Live pipeline dashboard:</strong> Replaced a manual report that revenue leadership used for decisions with a live, dynamic Looker dashboard for account teams (open deals by revenue type, state, user, and role); it was adopted and the manual process was retired. Also built a partner product-usage dashboard, rebuilt the Marketing lead follow-up dashboard, and drafted an onboarding completion view by quarter</li>
+            <li><strong>Self-serve survey reporting:</strong> Extended the Professional Learning survey model in BigQuery and LookML with conditional logic and numeric measures for confidence ratings, then built a heatmap, two Looker Studio templates, and a how-to guide, so the team could build its own dynamic reports with less manual assembly</li>
             <li><strong>Renewal analytics:</strong> Built a weekly snapshot of open renewal accounts that tracks tier and owner changes, and analyzed how many days before renewal an owner change happened, comparing Closed Won with Closed Lost renewals</li>
-            <li><strong>Analytics engineering (in progress):</strong> Started building dbt models that deploy common joins and queries as ready-to-query BigQuery views, so logic is reused instead of rewritten for each report</li>
+            <li><strong>Analytics engineering (started):</strong> Started building dbt models that deploy common joins and queries as ready-to-query BigQuery views, so logic is reused instead of rewritten for each report</li>
             <li><strong>Data foundations:</strong> Pushed a new account-team view to production, updated weekly-snapshot query logic, root-caused recurring Looker Studio quarter errors to null project start dates, and updated a utilization review report to read from a new product-utilization model</li>
-            <li><strong>Team enablement:</strong> Authored a BI resource sheet (go-to-market glossary, license types, key contacts) that speeds up cross-team alignment, and delivered 14 documented BI deliverables in the first 10 weeks</li>
+            <li><strong>Team enablement:</strong> Authored a BI resource sheet (go-to-market glossary, license types, key contacts) that speeds up cross-team alignment, and documented the BI deliverables so others could reuse them</li>
           </ul>
         </article>
 
@@ -676,7 +673,7 @@
             class="about__banner"
           />
           <p>I spent five years as a teacher in the Greater Seattle School District, tracking student performance, spotting trends, and translating data into action plans families could actually understand. I realized I was already doing the work of an analyst, I just needed to make it official.</p>
-          <p>Since pivoting into data analytics, I&rsquo;ve built ETL pipelines, designed Tableau dashboards for VP-level audiences, and used SQL to cut customer wait times by 55%. As a Junior BI Analyst, I now ship Looker dashboards and BigQuery models, including an attribution rebuild that took unattributed pipeline from 34% to 0%. What sets me apart? I don't just find the insights, I make sure my audience understands and can act on it.</p>
+          <p>Since pivoting into data analytics, I&rsquo;ve built ETL pipelines, designed Tableau dashboards for VP-level audiences, and used SQL to cut customer wait times by 55%. As a Junior BI Analyst, I shipped Looker dashboards and BigQuery models, including an attribution rebuild that gave every deal a credited owner. What sets me apart? I don't just find the insights, I make sure my audience understands and can act on it.</p>
           <div class="about__tools">
             <span class="tag">SQL</span>
             <span class="tag">Python</span>
@@ -715,7 +712,7 @@
           <div class="highlight-card">
             <div class="highlight-card__icon">⚙️</div>
             <h3>Process Improver</h3>
-            <p>I don't stop at the dashboard. I've redesigned staffing models, eliminated unattributed pipeline in a revenue attribution model, identified that mismatched plan recommendations drove churn at 68%, flagged $151K in pay variances, and delivered concrete next steps across five industries.</p>
+            <p>I don't stop at the dashboard. I've redesigned staffing models, rebuilt a revenue attribution model so every deal had a credited owner, identified that mismatched plan recommendations drove churn at 68%, and delivered concrete next steps across five industries.</p>
           </div>
         </div>
       </div>
