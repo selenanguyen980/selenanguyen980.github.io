@@ -1181,3 +1181,16 @@ ul   { list-style: none; }
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* Hover lift on experience and education cards (matches project cards) */
+.exp-card, .exp-mini, .edu-card {
+  transition: box-shadow var(--t), transform var(--t), border-color var(--t);
+}
+.exp-card:hover, .exp-mini:hover, .edu-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+}
+@media (prefers-reduced-motion: reduce) {
+  .exp-card:hover, .exp-mini:hover, .edu-card:hover { transform: none; }
+}
