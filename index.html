@@ -120,213 +120,89 @@
   <!-- ── BUSINESS INTELLIGENCE ── -->
   <section class="bi section" id="bi">
     <div class="container">
-      <span class="section-label">BI Work</span>
-      <h2 class="section-title">Dashboards, models, and reporting</h2>
-      <p class="bi__lede">As a Junior BI Analyst at Transfr, I turned CRM, product, and survey data into trusted models and dashboards for Revenue Operations, Marketing, account teams, Onboarding, and Professional Learning. Customer, colleague, and deal-level details are intentionally left out, so this section describes the scope of the work rather than metrics.</p>
+      <div>
+        <p class="section-label">BI Work</p>
+        <h2 class="section-title">Dashboards, models, and reporting</h2>
+        <p style="font-size: 15px; color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--sp-10); max-width: 800px;">
+          As a Junior BI Analyst at Transfr, I built dashboards, models, and self-serve reports that enabled RevOps, Customer Success, Marketing, and Product teams to make data-driven decisions. I worked across BigQuery, Looker, dbt, and Looker Studio to create reusable data models, reduce manual reporting, and empower teams with self-service analytics. Customer, colleague, and deal-level details are intentionally left out, so this section describes the scope of work rather than specific metrics.
+        </p>
+      </div>
 
-      <div class="bi-grid" data-animate>
-
-        <!-- Flagship: attribution -->
-        <article class="project-card bi-card bi-card--wide">
-          <div class="bi-card__body">
-            <div class="project-card__top">
-              <div class="project-card__tags">
-                <span class="tag tag--accent">BigQuery</span>
-                <span class="tag tag--accent">SQL</span>
-                <span class="tag tag--accent">Looker</span>
-                <span class="tag tag--accent">Salesforce data</span>
-              </div>
-            </div>
-            <h3 class="project-card__title">Attribution Model Revamp</h3>
-            <p class="project-card__desc">Co-led, with another junior BI analyst, a rebuild of the last-touch attribution logic that credits pipeline to Marketing, SDR, and Sales. Opportunities missing a qualifying meeting or recent activity used to fall out of the model as &ldquo;unattributable.&rdquo; We added fallback rules that credit the person who created the record, so every deal had an owner. I presented the before-and-after impact to Revenue Operations leadership.</p>
-            <div class="project-card__insight">
-              <span class="insight-label">Outcome</span>
-              <span class="insight-value">Every deal has a credited owner, giving Revenue Operations a more complete view of pipeline credit</span>
-            </div>
+      <div class="projects-bento">
+        <div class="project-card">
+          <h3 class="project-card__title">Last-Touch Attribution</h3>
+          <p class="project-card__desc">Rebuilt attribution logic in BigQuery so every deal has a credited owner, correcting skewed reporting. Presented results to RevOps and leadership.</p>
+          <div class="project-card__tags">
+            <span class="chip">BigQuery</span>
+            <span class="chip">Gemini</span>
+            <span class="chip">Looker</span>
+            <span class="chip">Google Slides</span>
           </div>
-          <div class="bi-card__visual">
-            <div class="ba" role="img" aria-label="Before, some deals fell out of the model with no credited owner. After, every deal has a credited owner.">
-              <span class="ba__title">Credit coverage</span>
-              <div class="ba__qual">
-                <span class="ba__label">Before</span>
-                <span class="ba__text">Some deals fell out of the model with no credited owner</span>
-              </div>
-              <div class="ba__qual ba__qual--after">
-                <span class="ba__label">After</span>
-                <span class="ba__text">Every deal has a credited owner</span>
-              </div>
-              <div class="ba__rules">
-                <span class="ba__rule"><strong>Standard last-touch credit</strong> where activity exists</span>
-                <span class="ba__rule"><strong>Fallback ownership rules</strong> where it does not</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Account team dashboard (with anonymized layout) -->
-        <article class="project-card bi-card bi-card--wide">
-          <div class="bi-card__body">
-            <div class="project-card__top">
-              <div class="project-card__tags">
-                <span class="tag tag--accent">Looker</span>
-                <span class="tag tag--accent">BigQuery</span>
-                <span class="tag tag--accent">LookML</span>
-              </div>
-            </div>
-            <h3 class="project-card__title">Account Team Pipeline Dashboard</h3>
-            <p class="project-card__desc">Built an interactive Looker dashboard that gives account teams a live view of open deals by revenue type (new business, upsell, renewal), open versus total deals, and open-deal amounts by state, with filters for account, state, user, and role. Co-built with another junior BI analyst from a stakeholder request, backed by an account-team view I helped push to production.</p>
-            <div class="project-card__insight">
-              <span class="insight-label">Outcome</span>
-              <span class="insight-value">Replaced a manual report that revenue leadership used for decisions &middot; Adopted, and the manual process was retired</span>
-            </div>
-          </div>
-          <div class="bi-card__visual">
-            <div class="bi-mock" role="img" aria-label="Illustrative layout of the account team pipeline dashboard, drawn with placeholder data">
-              <div class="bi-mock__filters"><span>Account</span><span>State</span><span>User</span><span>Role</span></div>
-              <div class="bi-mock__kpis">
-                <div class="bi-mock__kpi"><small>NB &amp; Upsell open deals</small><strong>###</strong></div>
-                <div class="bi-mock__kpi"><small>Renewal open deals</small><strong>###</strong></div>
-              </div>
-              <div class="bi-mock__charts">
-                <div class="bi-mock__chart">
-                  <small>Open deals by revenue type</small>
-                  <svg viewBox="0 0 120 120" aria-hidden="true">
-                    <g transform="rotate(-90 60 60)" fill="none" stroke-width="22">
-                      <circle cx="60" cy="60" r="40" stroke="#f4a4b9" stroke-dasharray="95.5 251.3" stroke-dashoffset="0"/>
-                      <circle cx="60" cy="60" r="40" stroke="#80a1c1" stroke-dasharray="72.9 251.3" stroke-dashoffset="-95.5"/>
-                      <circle cx="60" cy="60" r="40" stroke="#c4617a" stroke-dasharray="67.9 251.3" stroke-dashoffset="-168.4"/>
-                      <circle cx="60" cy="60" r="40" stroke="#16a34a" stroke-dasharray="15.1 251.3" stroke-dashoffset="-236.3"/>
-                    </g>
-                  </svg>
-                </div>
-                <div class="bi-mock__chart">
-                  <small>Total vs. open deals</small>
-                  <svg viewBox="0 0 160 110" aria-hidden="true">
-                    <g stroke="#f2c4cf" stroke-width="1">
-                      <line x1="8" y1="20" x2="152" y2="20"/><line x1="8" y1="55" x2="152" y2="55"/><line x1="8" y1="90" x2="152" y2="90"/>
-                    </g>
-                    <polyline points="12,28 48,44 84,50 120,78 150,86" fill="none" stroke="#80a1c1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <polyline points="12,50 48,60 84,66 120,84 150,88" fill="none" stroke="#c4617a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="bi-mock__table">
-                <div class="bi-mock__row bi-mock__row--head"><span>User</span><span>Account</span><span>State</span><span>Open</span></div>
-                <div class="bi-mock__row"><span>Rep A</span><span>Account 1</span><span>ST</span><span>#</span></div>
-                <div class="bi-mock__row"><span>Rep B</span><span>Account 2</span><span>ST</span><span>#</span></div>
-                <div class="bi-mock__row"><span>Rep C</span><span>Account 3</span><span>ST</span><span>#</span></div>
-              </div>
-              <p class="bi-mock__note">Illustrative layout &middot; placeholder data</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Professional Learning survey reporting -->
-        <article class="project-card project-card--medium">
-          <div class="project-card__top">
-            <div class="project-card__tags">
-              <span class="tag tag--accent">BigQuery</span>
-              <span class="tag tag--accent">LookML</span>
-              <span class="tag tag--accent">Looker Studio</span>
-            </div>
-          </div>
-          <h3 class="project-card__title">Professional Learning Survey Reporting</h3>
-          <p class="project-card__desc">Extended the survey data model with conditional logic that maps record types to the different survey formats and converts text-based confidence ratings into numeric measures. Built a confidence heatmap in Looker, then designed two Looker Studio templates and a step-by-step guide for the Professional Learning team.</p>
           <div class="project-card__insight">
             <span class="insight-label">Outcome</span>
-            <span class="insight-value">Less manual report assembly &middot; The team could build its own dynamic, self-serve reports</span>
+            <span class="insight-content">Lowered unattributable deals from 166 to 0 and unattributable amount from $5.4M to $0</span>
           </div>
-        </article>
+        </div>
 
-        <!-- Usage & utilization reporting -->
-        <article class="project-card project-card--medium">
-          <div class="project-card__top">
-            <div class="project-card__tags">
-              <span class="tag tag--accent">Looker</span>
-              <span class="tag tag--accent">BigQuery</span>
-              <span class="tag tag--accent">Looker Studio</span>
-            </div>
+        <div class="project-card">
+          <h3 class="project-card__title">Account Renewals Dashboard</h3>
+          <p class="project-card__desc">Built weekly snapshot dashboards tracking account tier, ownership changes, and onboarding projects. Used in weekly executive leadership meetings.</p>
+          <div class="project-card__tags">
+            <span class="chip">BigQuery</span>
+            <span class="chip">Looker</span>
+            <span class="chip">Looker Studio</span>
           </div>
-          <h3 class="project-card__title">Product Usage &amp; Utilization Reporting</h3>
-          <p class="project-card__desc">Built a Looker dashboard tracking VR and mobile training usage for a partner organization, with training simulations started by month and by module and utilization by organization over a rolling period. Then updated a multi-page, print-friendly utilization review report to pull from a new product-utilization model.</p>
           <div class="project-card__insight">
-            <span class="insight-label">Built For</span>
-            <span class="insight-value">Partner reviews of product usage over time</span>
+            <span class="insight-label">Outcome</span>
+            <span class="insight-content">Provided Director of CS with reports needed for weekly executive leadership visibility</span>
           </div>
-        </article>
+        </div>
 
-        <!-- Marketing lead follow-up -->
-        <article class="project-card project-card--medium">
-          <div class="project-card__top">
-            <div class="project-card__tags">
-              <span class="tag tag--accent">Looker</span>
-              <span class="tag tag--accent">Filters</span>
-              <span class="tag tag--accent">Drill-downs</span>
-            </div>
+        <div class="project-card">
+          <h3 class="project-card__title">Survey Model & Self-Serve Reports</h3>
+          <p class="project-card__desc">Expanded survey data model with disparate sources, then built Looker Studio reports for customer-facing teams to track event survey ratings independently.</p>
+          <div class="project-card__tags">
+            <span class="chip">BigQuery</span>
+            <span class="chip">LookML</span>
+            <span class="chip">Looker Studio</span>
           </div>
-          <h3 class="project-card__title">Marketing Lead Follow-Up Dashboard</h3>
-          <p class="project-card__desc">Rebuilt the Marketing team&rsquo;s lead follow-up dashboard as a replica to master advanced Looker features: marketing-qualified lead tiles, a drill-down lead list, and a full set of filters covering channel, rating, owner, campaign, and days without activity, so stale leads are easy to spot.</p>
           <div class="project-card__insight">
-            <span class="insight-label">Skills Built</span>
-            <span class="insight-value">Advanced filters &middot; interactive charts &middot; drill-downs</span>
+            <span class="insight-label">Outcome</span>
+            <span class="insight-content">Enabled self-serve reporting without BI support</span>
           </div>
-        </article>
+        </div>
 
-        <!-- Data foundations -->
-        <article class="project-card project-card--medium">
-          <div class="project-card__top">
-            <div class="project-card__tags">
-              <span class="tag tag--accent">BigQuery</span>
-              <span class="tag tag--accent">LookML</span>
-              <span class="tag tag--accent">SQL</span>
-              <span class="tag tag--accent">Documentation</span>
-            </div>
+        <div class="project-card">
+          <h3 class="project-card__title">Product Utilization Dashboard</h3>
+          <p class="project-card__desc">Built Looker dashboard for customer success team to track product usage across hardware and mobile app, pinpointing adoption gaps for intervention.</p>
+          <div class="project-card__tags">
+            <span class="chip">BigQuery</span>
+            <span class="chip">Looker</span>
           </div>
-          <h3 class="project-card__title">Data Foundations &amp; Documentation</h3>
-          <p class="project-card__desc">Behind the dashboards: pushed a new account-team view to production, added date-based logic to a weekly snapshot query, and traced recurring quarter errors in a Looker Studio report to null project start dates. Wrote a BI resource sheet (go-to-market glossary, license types, key contacts) and drafted a completed-versus-open onboarding projects view by quarter.</p>
           <div class="project-card__insight">
-            <span class="insight-label">Root Cause Found</span>
-            <span class="insight-value">Recurring report errors traced to null project start dates</span>
+            <span class="insight-label">Outcome</span>
+            <span class="insight-content">Identified adoption gaps to prioritize customer success efforts</span>
           </div>
-        </article>
+        </div>
 
-        <!-- Renewal ownership analysis -->
-        <article class="project-card project-card--medium">
-          <div class="project-card__top">
-            <div class="project-card__tags">
-              <span class="tag tag--accent">BigQuery</span>
-              <span class="tag tag--accent">SQL</span>
-              <span class="tag tag--accent">Window Functions</span>
-            </div>
+        <div class="project-card">
+          <h3 class="project-card__title">dbt Models & Shared Data Layer</h3>
+          <p class="project-card__desc">Built dbt models alongside data engineering to publish reusable BigQuery views, establishing one source of truth for definitions and keeping the team aligned.</p>
+          <div class="project-card__tags">
+            <span class="chip">dbt</span>
+            <span class="chip">BigQuery</span>
+            <span class="chip">LookML</span>
+            <span class="chip">GitHub</span>
           </div>
-          <h3 class="project-card__title">Renewal Ownership Analysis</h3>
-          <p class="project-card__desc">Built a weekly snapshot of open renewal accounts that tracks account tier and owner changes week over week, using point-in-time joins on versioned account and opportunity history. Then measured the gap between an account-owner change and the renewal date, grouped into time buckets, and compared Closed Won with Closed Lost renewals along with the revenue at stake.</p>
           <div class="project-card__insight">
-            <span class="insight-label">Question Explored</span>
-            <span class="insight-value">Does a late account handoff change whether a renewal closes?</span>
+            <span class="insight-label">Outcome</span>
+            <span class="insight-content">Established single source of truth for data definitions</span>
           </div>
-        </article>
-
-        <!-- dbt views (started) -->
-        <article class="project-card project-card--medium">
-          <div class="project-card__top">
-            <div class="project-card__tags">
-              <span class="tag tag--accent">dbt</span>
-              <span class="tag tag--accent">BigQuery</span>
-              <span class="tag tag--accent">SQL</span>
-            </div>
-          </div>
-          <h3 class="project-card__title">dbt Views for BigQuery</h3>
-          <p class="project-card__desc">Common joins and queries were often not deployed as ready-to-query views, so the same logic got rewritten report after report. I started building dbt models that deploy them as reusable BigQuery views, taking on analytics engineering work beyond the BI analyst role.</p>
-          <div class="project-card__insight">
-            <span class="insight-label">Status</span>
-            <span class="insight-value">Started &middot; early-stage move from BI analyst toward analytics engineering</span>
-          </div>
-        </article>
-
+        </div>
       </div>
     </div>
   </section>
+
 
   <!-- ── EXPERIENCE ── -->
   <section class="experience section" id="experience">
