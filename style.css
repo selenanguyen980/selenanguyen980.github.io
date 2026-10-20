@@ -1184,7 +1184,7 @@ ul   { list-style: none; }
 
 /* Hover lift on experience and education cards (matches project cards) */
 .exp-card, .exp-mini, .edu-card {
-  transition: box-shadow var(--t), transform var(--t), border-color var(--t);
+  transition: opacity .55s ease, box-shadow var(--t), transform var(--t), border-color var(--t);
 }
 .exp-card:hover, .exp-mini:hover, .edu-card:hover {
   box-shadow: var(--shadow-lg);
