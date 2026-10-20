@@ -761,6 +761,7 @@ ul   { list-style: none; }
   background: var(--color-surface);
   border-radius: var(--r-sm);
   border-left: 3px solid var(--color-primary);
+  margin-top: var(--sp-6);
   margin-bottom: var(--sp-4);
 }
 .insight-label {
