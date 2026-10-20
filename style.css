@@ -483,6 +483,12 @@ ul   { list-style: none; }
   box-shadow: var(--shadow-md);
 }
 
+/* About divider */
+.about__divider {
+  grid-column: 1 / -1;
+  margin-top: var(--sp-10);
+  border-top: 1px solid var(--color-border);
+}
 /* About facts strip */
 .about__facts {
   display: grid;
