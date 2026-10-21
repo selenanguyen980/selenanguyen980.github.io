@@ -608,10 +608,10 @@ ul   { list-style: none; }
 
 .skill-card__icon { font-size: 28px; margin-bottom: var(--sp-3); }
 .skill-card--large .skill-card__icon { font-size: 36px; }
-.skill-card__name { font-size: 20px; font-weight: 800; letter-spacing: -.02em; margin-bottom: var(--sp-2); }
-.skill-card--small .skill-card__name { font-size: 14px; font-weight: 700; margin-bottom: var(--sp-2); }
+.skill-card__name { font-size: 18px; font-weight: 700; letter-spacing: -.02em; margin-bottom: var(--sp-2); }
+.skill-card--small .skill-card__name { font-size: 18px; font-weight: 700; margin-bottom: var(--sp-2); }
 .skill-card__desc { font-size: 13px; color: var(--color-text-muted); line-height: 1.6; }
-.skill-card--small .skill-card__desc { font-size: 12px; }
+.skill-card--small .skill-card__desc { font-size: 13px; }
 .skill-card__badge {
   display: inline-block;
   margin-top: var(--sp-4);
