@@ -1197,3 +1197,9 @@ ul   { list-style: none; }
 
 /* Slightly tighter tinted bands (Toolkit, Contact) */
 .skills.section, .contact.section { padding: 56px 0; }
+
+/* Tighter About -> Education spacing */
+.about.section { padding-bottom: 0; }
+@media (min-width: 901px) {
+  .about__grid { row-gap: var(--sp-8); }
+}
