@@ -1194,3 +1194,6 @@ ul   { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   .exp-card:hover, .exp-mini:hover, .edu-card:hover { transform: none; }
 }
+
+/* Slightly tighter tinted bands (Toolkit, Contact) */
+.skills.section, .contact.section { padding: 56px 0; }
